@@ -17,8 +17,9 @@ public class LanceControl : MonoBehaviour {
 
     void FixedUpdate()
     {
+        float moveHorizontal = Input.acceleration.x;
         //Store the current horizontal input in the float moveHorizontal.
-        float moveHorizontal = Input.GetAxis("Horizontal");
+//        float moveHorizontal = Input.GetAxis("Horizontal");
 
         //Use the two store floats to create a new Vector2 variable movement.
         Vector2 movement = new Vector2(moveHorizontal, 0);
